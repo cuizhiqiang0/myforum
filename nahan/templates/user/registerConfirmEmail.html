@@ -1,0 +1,7 @@
+<p>{{ _('Dear') }} {{ user.username }}:</p>
+<p>{{ _('To activation your account') }} <a href="{{ url_for('user.registerConfirm', token=token, _external=True) }}">{{ _('click here.') }}</a></p>
+<p>{{ _("Alternatively, you can paste the following link in your browser's address bar:") }}</p>
+<p>{{ url_for('user.registerConfirm', token=token, _external=True) }}</p>
+<p>{{ _('If you have not requested a new accounr simply ignore this message.') }}</p>
+<p>{{ _('Sincerely, \n The Nnpan Team') }} </p>
+<p class="text-info">{{ _('Note: replies to this email address are not monitored.') }}</small></p>
